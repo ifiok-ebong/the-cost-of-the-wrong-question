@@ -41,9 +41,7 @@ def sha256_file(path: pathlib.Path) -> str:
 
 def write_hashes(files: list[pathlib.Path]) -> None:
     lines = [f"{sha256_file(p)}  {p.relative_to(ROOT)}" for p in files]
-    HASHES_FILE.write_text("
-".join(lines) + "
-", encoding="utf-8")
+    HASHES_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def have_expected_files() -> bool:

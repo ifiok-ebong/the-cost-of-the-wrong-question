@@ -146,6 +146,8 @@ Decompose net revenue change into additive components (practical heuristic using
 
 Note: these components are not guaranteed to be mutually exclusive in this dataset; the goal is comparative diagnosis, not perfect attribution.
 
+Note: the Phase 3 "leader" is evaluated on rolling 3-month *magnitude* of movement to identify the biggest lever; interpret with direction and context.
+
 Summarize each driver by:
 - Magnitude of impact
 - Consistency over time

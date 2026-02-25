@@ -21,6 +21,7 @@ Focus on plan tier mix, seat contraction, and ARPA drift as the measurable lever
 Leadership can flip month-to-month; the decision is anchored on the latest rolling 3-month window.
 
 ## Interpretation and guardrails
+- In Phase 3, the driver "leader" reflects the largest *magnitude* movement over the rolling window (largest lever), not strictly the largest negative drag.
 - The Phase 3 comparison is a **decision-oriented heuristic**, not a perfect accounting identity.
 - Components are **proxied** from available fields; some interactions (e.g., plan changes showing up as expansion/contraction) can blur boundaries.
 - Treat the winner as the **best leading explanation in the latest 3-month window**, and validate by checking whether driver-linked leading indicators move after intervention.

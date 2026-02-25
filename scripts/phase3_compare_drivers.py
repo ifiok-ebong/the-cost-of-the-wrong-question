@@ -46,6 +46,7 @@ def main() -> None:
     df["pricing_contribution"] = df["arpa"].diff() * df["active_accounts"]
 
     # Normalize to absolute impact magnitude for comparison
+    # This identifies the largest moving component (largest lever) over the window; direction is handled separately in interpretation.
     df["acq_abs"] = df["acq_contribution"].abs()
     df["ret_abs"] = df["retention_contribution"].abs()
     df["prc_abs"] = df["pricing_contribution"].abs()
