@@ -15,6 +15,7 @@ This repo is a decision-first case study showing how framing errors distort anal
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+# Optional: for fully pinned deps, use: pip install -r requirements.lock.txt
 # Requires Kaggle credentials in ~/.kaggle/kaggle.json
 python scripts/download_data.py
 jupyter notebook notebooks/analysis_decision_analysis.ipynb
