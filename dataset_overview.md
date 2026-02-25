@@ -37,7 +37,6 @@ Key fields:
 - `industry`, `company_size`, `country`
 - `referral_source`
 - `signup_date`
-- ``
 
 ### 2. Subscriptions (`ravenstack_subscriptions.csv`)
 Subscription history and realized recurring revenue per subscription.
@@ -91,7 +90,7 @@ Pricing compression is evaluated via ARPA drift, plan tier migration, and seat c
 - Explicit discount percentage
 - Cost data (so gross margin is not modeled)
 
-Acquisition is evaluated using volume and value signals (new accounts, contract value, initial MRR, and channel mix).
+Acquisition is evaluated using volume and value signals (new accounts, starting MRR for new accounts, and referral source mix).
 
 ---
 

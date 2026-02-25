@@ -18,6 +18,8 @@ Focus on plan tier mix, seat contraction, and ARPA drift as the measurable lever
 | Nov 2024 |        468207 |    0.148918  |      2.8502  | pricing     |      55240.1 |        53040 |      82335.3 |
 | Dec 2024 |        574643 |    0.227327  |      4.05594 | pricing     |      74939   |        82016 |      87474.4 |
 
+Leadership can flip month-to-month; the decision is anchored on the latest rolling 3-month window.
+
 ## Interpretation and guardrails
 - The Phase 3 comparison is a **decision-oriented heuristic**, not a perfect accounting identity.
 - Components are **proxied** from available fields; some interactions (e.g., plan changes showing up as expansion/contraction) can blur boundaries.
