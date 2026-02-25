@@ -100,7 +100,29 @@ def safe_test() -> int:
             subprocess.check_call(cmd, cwd=str(troot), env=env)
 
         # Data + phases
-        run_env([str(py), "scripts/download_data.py"])
+        # In safe-test mode, avoid surprising failures due to Kaggle CLI setup.
+        # If raw CSVs are present (seeded from the current working tree), skip the Kaggle download call.
+        raw_dir = troot / "data" / "raw" / "ravenstack"
+        expected = [
+            "ravenstack_accounts.csv",
+            "ravenstack_subscriptions.csv",
+            "ravenstack_churn_events.csv",
+            "ravenstack_feature_usage.csv",
+            "ravenstack_support_tickets.csv",
+        ]
+        have_raw = raw_dir.exists() and all((raw_dir / f).exists() for f in expected)
+        if have_raw:
+            print('\nRaw data present in temp copy; skipping Kaggle download step.')
+        else:
+            # Attempt download only if Kaggle CLI is available; otherwise fail with a clear message.
+            kaggle_ok = shutil.which('kaggle') is not None
+            if not kaggle_ok:
+                raise RuntimeError(
+                    'Safe-test requires either (a) existing raw CSVs in data/raw/ravenstack/ '
+                    'or (b) Kaggle CLI configured. Kaggle CLI not found.'
+                )
+            run_env([str(py), 'scripts/download_data.py'])
+
         run_env([str(py), "scripts/phase1_baseline.py"])
         run_env([str(py), "scripts/phase2a_acquisition_output.py"])
         run_env([str(py), "scripts/phase2b_ltv_deterioration.py"])
