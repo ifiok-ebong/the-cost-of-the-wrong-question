@@ -20,6 +20,11 @@ python scripts/download_data.py
 jupyter notebook notebooks/analysis_decision_analysis.ipynb
 ```
 
+Optional (run everything end-to-end):
+```bash
+python scripts/run_all.py
+```
+
 ## Deliverables
 - `README.md`
 - `decision_statement.md`
