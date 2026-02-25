@@ -14,7 +14,6 @@ Subscription-based B2B services company
 
 ## Current Situation
 Over the past 3 quarters:
-
 - Net revenue growth has slowed
 - Gross sales appear stable
 - Executive concern is rising regarding long-term growth trajectory
@@ -29,7 +28,6 @@ Internal debate has emerged around the cause of decline.
 Marketing argues:
 - Lead quality has declined
 - Market competition has intensified
-- Conversion rates are deteriorating
 
 ### Narrative 2: Retention Problem
 Customer Success argues:
@@ -39,8 +37,8 @@ Customer Success argues:
 
 ### Narrative 3: Pricing Compression
 Finance argues:
-- Discounting has increased
-- Average revenue per account is declining
+- ARPA is declining
+- Plan mix is shifting downward
 
 Each narrative is plausible.
 Each team can produce selective metrics to support its claim.
@@ -48,7 +46,6 @@ Each team can produce selective metrics to support its claim.
 ---
 
 ## Why This Matters
-
 The wrong diagnosis will result in:
 - Misallocated capital
 - Reinforcement of incorrect internal narratives

@@ -11,19 +11,16 @@ Chief Revenue Officer (CRO) and Executive Leadership Team
 This triggered broad exploratory analysis across:
 - Marketing spend
 - Lead generation
-- Sales conversion rates
+- Conversion rates
 - Market conditions
 
-However, the framing assumes:
-- The slowdown is primarily a top-line acquisition volume problem
-- The issue lies within acquisition mechanics
-
+However, the framing assumes acquisition mechanics are the primary cause.
 This assumption is untested.
 
 ---
 
 ## Reframed Strategic Question
-"Which structural driver is primarily responsible for the slowdown in net revenue growth: reduced acquisition efficiency, declining customer lifetime value, or pricing compression?"
+"Which structural driver is primarily responsible for the slowdown in net revenue growth: reduced acquisition output, declining customer lifetime value, or pricing compression?"
 
 This reframing forces comparison between competing explanations rather than exploring one assumed cause.
 
@@ -31,10 +28,9 @@ This reframing forces comparison between competing explanations rather than expl
 
 ## Decision to Be Made
 Prioritize one of the following strategic interventions:
-
-1. Increase marketing investment to improve acquisition volume
-2. Optimize pricing and packaging to improve revenue per account
-3. Invest in retention initiatives to improve lifetime value
+1. Increase acquisition investment to improve new account volume and value
+2. Invest in retention initiatives to improve lifetime value
+3. Optimize packaging and pricing to improve revenue per account
 
 ---
 
@@ -45,19 +41,17 @@ Prioritize one of the following strategic interventions:
 
 ---
 
-## What Would Change the Decision
-The decision would change if evidence shows:
+## Dataset Constraints (Explicit)
+- CAC and conversion rate are not available in the dataset
+- Discount percentage is not available
 
-- Customer acquisition efficiency has materially declined
-- Lifetime value deterioration exceeds acquisition decline
-- Revenue compression is driven by pricing or discounting rather than churn
-- Pricing compression is concentrated in a specific segment or channel
+Acquisition impact is evaluated via new account volume, contract value, initial MRR, and channel mix.
+Pricing compression is evaluated via ARPA drift, plan tier migration, and seat changes.
 
 ---
 
 ## Decision Success Criteria
 The selected intervention must:
-
 - Address the dominant structural driver of net revenue slowdown
-- Produce measurable financial impact within two cycles
+- Produce measurable impact within two cycles
 - Avoid misallocation of capital based on incorrect assumptions
