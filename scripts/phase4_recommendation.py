@@ -36,8 +36,26 @@ def main() -> None:
 
     pressure_streak = _streak_length(comp.get("leader_pressure_3m")) if "leader_pressure_3m" in comp.columns else 0
 
-    # Recommendation rule: declare a single dominant pressure only if it holds for >=3 consecutive months.
-    if pressure_streak >= 3:
+    # Margin gate: require the pressure leader to beat runner-up by a material margin.
+    # This implements the blueprint's >15-20% condition.
+    margin_threshold = 0.15
+    # Use latest row with non-null pressure leader
+    latest_row = comp.dropna(subset=["leader_pressure_3m"]).iloc[-1] if "leader_pressure_3m" in comp.columns else None
+    pressure_vals = {}
+    if latest_row is not None:
+        pressure_vals = {
+            "acquisition": float(latest_row.get("acq_pressure_3m", 0.0)),
+            "retention": float(latest_row.get("ret_pressure_3m", 0.0)),
+            "pricing": float(latest_row.get("prc_pressure_3m", 0.0)),
+        }
+    ordered = sorted(pressure_vals.items(), key=lambda kv: kv[1], reverse=True)
+    top = ordered[0][1] if ordered else 0.0
+    runner = ordered[1][1] if len(ordered) > 1 else 0.0
+    pressure_margin_ok = (top > 0) and ((top - runner) / top >= margin_threshold)
+
+    # Recommendation rule: declare a single dominant pressure only if it holds for >=3 consecutive months
+    # AND exceeds the runner-up by a material margin (default 15%).
+    if pressure_streak >= 3 and pressure_margin_ok:
         recommendation_driver = pressure_leader
         recommendation_mode = "single-driver"
     else:
