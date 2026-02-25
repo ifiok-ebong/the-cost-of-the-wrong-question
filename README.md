@@ -23,6 +23,7 @@ jupyter notebook notebooks/analysis_decision_analysis.ipynb
 Optional (run everything end-to-end):
 ```bash
 python scripts/run_all.py
+python scripts/run_all.py --safe-test  # runs in a temp copy (no local overwrites)
 ```
 
 ## Deliverables
