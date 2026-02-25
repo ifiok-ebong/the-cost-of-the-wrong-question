@@ -28,3 +28,8 @@ Raw data is not committed by default.
 ## License
 Project code and writing: MIT (unless otherwise noted).
 Dataset licensing is documented in `data/README.md`.
+
+## Quick links
+- Decision brief: `decision_brief.md`
+- Recommendation: `analysis_recommendation.md`
+- Figures: `docs/README.md`

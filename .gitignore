@@ -1,1 +1,13 @@
+# Local credentials
 kaggle.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Data policy
+/data/raw/
+
+# OS
+.DS_Store

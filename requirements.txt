@@ -1,0 +1,4 @@
+# Project runtime (install into a venv)
+pandas
+matplotlib
+tabulate
