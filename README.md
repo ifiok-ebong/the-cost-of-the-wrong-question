@@ -9,6 +9,16 @@ Most analytics failures start before data is touched.
 
 This repo is a decision-first case study showing how framing errors distort analysis and lead teams toward the wrong action.
 
+## Reproduce (local)
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+# Requires Kaggle credentials in ~/.kaggle/kaggle.json
+python scripts/download_data.py
+jupyter notebook notebooks/analysis_decision_analysis.ipynb
+```
+
 ## Deliverables
 - `README.md`
 - `decision_statement.md`

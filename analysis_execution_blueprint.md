@@ -133,7 +133,7 @@ If ARPA declines with plan mix shifts and seat contraction independent of churn 
 # Phase 3 - Structural Comparison
 
 ## Step 3.1 - Quantify Relative Impact (Simple Decomposition)
-Decompose net revenue change into additive components:
+Decompose net revenue change into additive components (practical heuristic using available fields):
 
 1) Acquisition contribution
 - Approximate as: delta new accounts x average starting MRR
@@ -143,6 +143,8 @@ Decompose net revenue change into additive components:
 
 3) Pricing contribution
 - Approximate as ARPA drift attributable to plan tier and seat migration
+
+Note: these components are not guaranteed to be mutually exclusive in this dataset; the goal is comparative diagnosis, not perfect attribution.
 
 Summarize each driver by:
 - Magnitude of impact
