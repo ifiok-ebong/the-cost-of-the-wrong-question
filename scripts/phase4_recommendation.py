@@ -18,6 +18,9 @@ def main() -> None:
     # Basic evidence snippets
     last6 = comp.tail(6)[["month", "net_revenue", "mom_growth", "yoy_growth", "leader_3m", "acq_abs_3m", "ret_abs_3m", "prc_abs_3m"]]
 
+    last6 = last6.copy()
+    last6["month"] = last6["month"].dt.strftime("%b %Y")
+
     md = []
     md.append("# Phase 4 - Strategic Recommendation")
     md.append("")

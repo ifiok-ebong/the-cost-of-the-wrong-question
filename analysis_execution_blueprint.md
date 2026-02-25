@@ -66,7 +66,7 @@ Is acquisition output declining structurally?
 ---
 
 ### Step 2A.2 - Evaluate Contract Value and Initial MRR
-- Contract value trend (from `contract_value`)
+- Starting MRR trend for new accounts (first observed realized MRR)
 - Initial MRR trend for new accounts
 
 Question:
@@ -75,7 +75,7 @@ Are new accounts arriving with lower value?
 ---
 
 ### Step 2A.3 - Evaluate Channel Mix
-- Acquisition channel mix shift over time
+- Referral source mix shift over time (from `referral_source`)
 
 Question:
 Is mix shifting toward lower-value channels?

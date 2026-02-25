@@ -38,7 +38,6 @@ Key fields:
 - `referral_source`
 - `signup_date`
 - ``
-- ``
 
 ### 2. Subscriptions (`ravenstack_subscriptions.csv`)
 Subscription history and realized recurring revenue per subscription.
@@ -55,7 +54,7 @@ Churn events and reasons.
 
 Key fields:
 - `account_id`, `churn_date`
-- `churn_reason`, `churn_type`
+- `reason_code`, `churn_type`
 
 ### 4. Feature Usage (`ravenstack_feature_usage.csv`) (Optional signal layer)
 Behavioral usage signals.
