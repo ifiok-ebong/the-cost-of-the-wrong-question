@@ -2,6 +2,11 @@
 
 Most analytics failures start before data is touched.
 
+## Executive summary
+- Decision: choose one primary intervention for the next quarter.
+- Method: three competing structural drivers tested independently, then compared.
+- Output: a dominance assessment and a recommendation in `analysis_recommendation.md`.
+
 This repo is a decision-first case study showing how framing errors distort analysis and lead teams toward the wrong action.
 
 ## Deliverables
