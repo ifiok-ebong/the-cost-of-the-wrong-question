@@ -34,11 +34,11 @@ Representative account attributes.
 
 Key fields:
 - `account_id`
-- `industry`, `company_size`, `region`
-- `acquisition_channel`
+- `industry`, `company_size`, `country`
+- `referral_source`
 - `signup_date`
-- `sales_rep`
-- `contract_value`
+- ``
+- ``
 
 ### 2. Subscriptions (`ravenstack_subscriptions.csv`)
 Subscription history and realized recurring revenue per subscription.
