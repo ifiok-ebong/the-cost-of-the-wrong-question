@@ -10,6 +10,7 @@ Most analytics failures start before data is touched.
 This repo is a decision-first case study showing how framing errors distort analysis and lead teams toward the wrong action.
 
 ## Reproduce (local)
+**Python:** 3.11+ (tested on 3.12)
 ```bash
 python -m venv .venv
 source .venv/bin/activate
