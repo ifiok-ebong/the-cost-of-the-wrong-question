@@ -157,11 +157,15 @@ Summarize each driver by:
 ---
 
 ## Step 3.2 - Dominance Assessment (Explicit Rule)
-A driver is dominant if:
-- Its impact exceeds others by a material margin (>15-20%), and
-- Direction is consistent over at least 3 consecutive months.
+Two complementary signals are used:
+- **Lever** (magnitude): which component is moving the most (largest absolute movement)
+- **Pressure** (directional drag): which component is contributing the most headwind/drag
 
-If two drivers are within ~10% and correlated, state a dual-driver conclusion.
+A driver is dominant **as a pressure** if:
+- Its rolling 3-month pressure exceeds others by a material margin (>15-20%), and
+- It remains the pressure leader for at least 3 consecutive months.
+
+If the pressure leader flips or two drivers are within ~10%, state a mixed/dual-driver conclusion.
 
 ---
 
