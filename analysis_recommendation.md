@@ -22,7 +22,7 @@ If you must pick one primary initiative under a hard constraint, prioritize the 
 ## Interpretation and guardrails
 - Two views are provided: **lever** (largest magnitude movement) and **pressure** (largest directional drag/headwind).
 - Pressure is computed as headwind-only: acquisition (only negative contribution), pricing (only ARPA compression), retention (churn+contraction drag).
-- The explicit dominance rule requires >=3 consecutive months of the same pressure leader; otherwise the window is treated as mixed-signal.
+- The explicit dominance rule requires >=3 consecutive months of the same pressure leader AND a material margin (>=15%) over the runner-up; otherwise the window is treated as mixed-signal.
 
 ## Risks and limitations
 - CAC and conversion are not available, so acquisition is evaluated via output and value proxies.
